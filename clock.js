@@ -16,6 +16,21 @@ function updateClock() {
     minuteHand.style.transform = `rotate(${minuteDeg}deg)`;
     secondHand.style.transform = `rotate(${secondDeg}deg)`;
 
+    // Update numbers
+    const clock = document.getElementById('clock');
+    const numbers = document.querySelectorAll('.number');
+
+    numbers.forEach((number, index) => {
+        const numberDeg = (index + 1) * 30;
+        const numberRadius = 80; // Adjust the radius to position the numbers
+
+        const x = numberRadius * Math.cos((numberDeg - 90) * (Math.PI / 180));
+        const y = numberRadius * Math.sin((numberDeg - 90) * (Math.PI / 180));
+
+        number.style.left = `calc(50% + ${x}px)`;
+        number.style.bottom = `calc(50% + ${y}px)`;
+    });
+
     setTimeout(updateClock, 1000);
 }
 
