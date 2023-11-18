@@ -26,7 +26,7 @@
     width: 50px;
     background-color: #333;
     margin-left: -25px;
-    bottom: 100px; /* Adjust the bottom position to move it inside the clock */
+    bottom: 100px;
 }
 
 #minute-hand {
@@ -34,7 +34,7 @@
     width: 75px;
     background-color: #333;
     margin-left: -37.5px;
-    bottom: 100px; /* Adjust the bottom position to move it inside the clock */
+    bottom: 100px;
 }
 
 #second-hand {
@@ -42,7 +42,7 @@
     width: 90px;
     background-color: red;
     margin-left: -45px;
-    bottom: 100px; /* Adjust the bottom position to move it inside the clock */
+    bottom: 100px;
 }
 
 .number {
@@ -50,5 +50,4 @@
     font-size: 14px;
     font-weight: bold;
     color: #333;
-    transform-origin: 50% 100%;
 }
